@@ -17,7 +17,14 @@ headers = {
 response = requests.request("POST", url, headers=headers, data=payload, files=files)
 
 
-print(response.text)
+response_txt = response.text
+print(response_txt)
+url_s = (response_txt.find('estuary_retrieval_url'))+ 24
+url_e = (response_txt.find('estuaryId')) - 3 - url_s
+print(url_s,url_e)
+print("hi")
+print(response_txt[url_s:url_s+url_e:1])
+
 
 #ON WEBISTE
 ### POST Location
