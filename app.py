@@ -16,6 +16,7 @@ def features():
         return render_template('features.html')
     
     else:
+        phone_number = request.form["phone_number"]
         coords = request.form["coords"]
         coordinates = coords.split(',')
         try:
