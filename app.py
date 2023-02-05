@@ -25,7 +25,7 @@ def features():
             os.remove('static/outputBefore.png')
             os.remove('static/result.png')
         except:
-            print('hello')
+            pass
         helpers.getBeforeAndAfterImages(coordinates)
         return redirect('/contact')
         
@@ -33,7 +33,7 @@ def features():
 def result():
     return render_template('contact.html')
 
-@app.route('/leaderboard') #by default is GET request
+@app.route('/pricing') #by default is GET request
 def leaderboard():
     return render_template('pricing.html')
 
