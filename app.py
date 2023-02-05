@@ -1,13 +1,20 @@
-from flask import Flask,render_template, request, redirect
+from flask import Flask, render_template, request, redirect
 import helpers
 import os
 
 app = Flask(__name__)
 
-@app.route('/', methods = ["GET","POST"])
+@app.route('/')
 def index():
     if request.method == "GET":
         return render_template('index.html')
+    
+
+@app.route('/features', methods = ["GET", "POST"])
+def features():
+    if request.method == "GET":
+        return render_template('features.html')
+    
     else:
         coords = request.form["coords"]
         coordinates = coords.split(',')
@@ -20,12 +27,17 @@ def index():
         except:
             print('hello')
         helpers.getBeforeAndAfterImages(coordinates)
-        return redirect('/result')
+        return redirect('/contact')
         
-@app.route('/result') #by default is GET request
+@app.route('/contact') #by default is GET request
 def result():
-    return render_template('result.html')
+    return render_template('contact.html')
+
+@app.route('/leaderboard') #by default is GET request
+def leaderboard():
+    return render_template('pricing.html')
 
 
 if __name__ == '__main__':
-    app.run() #debug = True in order to not run every time
+    #./ngrok http 3000
+    app.run(port=3000) #debug = True in order to not run every time
