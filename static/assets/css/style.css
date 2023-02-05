@@ -246,6 +246,17 @@ section {
   background: #fff;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
 }
+.pricing2 {
+  padding: 50px;
+  background: linear-gradient(-45deg, #66eaa1, #117b3c);
+  color: #fff;
+  padding-bottom: 12rem !important;
+  position: relative;
+  border-radius: 4px;
+  color: #000000;
+  background: rgb(187, 187, 187);
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+}
 
 .pricing h3 {
   color: #2da150;
