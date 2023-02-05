@@ -138,6 +138,17 @@ section {
   color: #fff;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
 }
+ 
+.text_entry_field {
+  border: none;
+  padding: 7px 15px !important;
+}
+.text_entry_field-input {
+  background: #2da150;
+  background: linear-gradient(-45deg, #66eaa1, #167d37);
+  color: #fff;
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.15);
+}
 
 /* Feature 1 */
 .feature-1 .wrap-icon {
