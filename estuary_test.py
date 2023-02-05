@@ -1,12 +1,20 @@
 import requests
+import os
+from twilio.rest import Client
+
+#twilio setup -- to be converted to env variables
+account_sid = "AC1a2e909926f462233a69d2ec20f1a229"
+auth_token = "0d3e4531336506891caf8d26aa9781f9"
 
 
+
+#estuary set up
 url = "https://api.estuary.tech/content/add"
 
 
 payload={}
 files=[
-  ('data',('file',open('result.png','rb'),'application/octet-stream'))
+  ('data',('file',open('static/result.png','rb'),'application/octet-stream'))
 ]
 headers = {
   'Accept': 'application/json',
@@ -21,9 +29,15 @@ response_txt = response.text
 print(response_txt)
 url_s = (response_txt.find('estuary_retrieval_url'))+ 24
 url_e = (response_txt.find('estuaryId')) - 3 - url_s
-print(url_s,url_e)
-print("hi")
-print(response_txt[url_s:url_s+url_e:1])
+
+theUrl= (response_txt[url_s:url_s+url_e:1])
+
+client = Client(account_sid, auth_token)
+client.messages.create(
+    to="+19259643840",
+    from_="+19136758450",
+    body=(f'This is a test message {theUrl}')
+    )
 
 
 #ON WEBISTE
