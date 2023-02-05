@@ -4,8 +4,8 @@ import os
 
 
 #twilio setup -- to be converted to env variables
-account_sid = "AC1a2e909926f462233a69d2ec20f1a229"
-auth_token = "0d3e4531336506891caf8d26aa9781f9"
+account_sid = os.environ["TWILIO_ACCOUNT_SID"]
+auth_token = os.environ["TWILIO_AUTH_TOKEN"]
 
 #estuary set up
 url = "https://api.estuary.tech/content/add"
