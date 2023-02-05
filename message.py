@@ -4,8 +4,8 @@ import os
 
 
 #twilio setup -- to be converted to env variables
-account_sid = os.environ["TWILIO_ACCOUNT_SID"]
-auth_token = os.environ["TWILIO_AUTH_TOKEN"]
+#account_sid = 
+#auth_token = 
 
 #estuary set up
 url = "https://api.estuary.tech/content/add"
@@ -45,5 +45,5 @@ def send_message(phoneNum, coords):
     client.messages.create(
         to="9259643840",
         from_="+19136758450",
-        body=(f'You can view the before and after satelite images for deforestation for {coords} coordinates here: /nBefore: {BeforeURL}/nAfter: {AfterURL}')
+        body=(f'You can view the before and after satelite images for deforestation for {coords} coordinates here: \n\nBefore: {BeforeURL}\n\nAfter: {AfterURL}')
         )
