@@ -3,9 +3,11 @@ import os
 from twilio.rest import Client
 
 #twilio setup -- to be converted to env variables
-account_sid = os.environ["TWILIO_ACCOUNT_SID"]
-auth_token = os.environ["TWILIO_AUTH_TOKEN"]
+#account_sid = os.environ["TWILIO_ACCOUNT_SID"]
+#auth_token = os.environ["TWILIO_AUTH_TOKEN"]
 
+account_sid = "AC1a2e909926f462233a69d2ec20f1a229"
+auth_token = "ac30eaefd6b71f7139b50f27fc601b6f"
 
 
 #estuary set up
