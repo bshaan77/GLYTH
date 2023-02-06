@@ -1,3 +1,5 @@
+## 1st Place - CruzHacks
+
 ## Inspiration
 Our inspiration for tackling the issue of deforestation stems from a deep concern for the environment and a desire to make a positive impact. We saw a need for a tool that could bring the impact of deforestation to life, and make it tangible for people everywhere. The problem of deforestation is a global issue and affects everyone, and we believe that it is important for people to understand its consequences and take action to address it. That's why we decided to build a data visualization tool that would allow users to see the impact of deforestation in their own communities. This was designed to be an immersive and educational experience, one that would inspire people to understand the issue. We believe that this project has the potential to make a real difference in the fight against deforestation. By raising awareness and inspiring people to take action, we hope to contribute to a more sustainable future for our planet.
 
