@@ -5,8 +5,8 @@ import time
 
 
 #twilio setup -- to be converted to env variables
-account_sid = "AC1a2e909926f462233a69d2ec20f1a229"
-auth_token = "ac30eaefd6b71f7139b50f27fc601b6f"
+# account_sid = 
+# auth_token = 
 
 #estuary set up
 url = "https://api.estuary.tech/content/add"

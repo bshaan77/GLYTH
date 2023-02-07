@@ -21,7 +21,6 @@ def features():
         coords = request.form["coords"]
         coordinates = coords.split(',')
         try:
-
             os.remove('static/AfterImage.png')
             os.remove('static/BeforeImage.png')
             os.remove('static/outputAfter.png')
