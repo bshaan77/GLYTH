@@ -18,6 +18,8 @@ def features():
     
     else:
         phone_number = request.form["phone_number"]
+        print(phone_number)
+        print(type(phone_number))
         coords = request.form["coords"]
         coordinates = coords.split(',')
         try:
@@ -29,7 +31,8 @@ def features():
         except:
             pass
         helpers.getBeforeAndAfterImages(coordinates)
-        message.send_message(phone_number, coords)
+        if phone_number != "":
+            message.send_message(phone_number, coords)
         return redirect('/contact')
 
         
