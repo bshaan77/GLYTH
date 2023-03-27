@@ -1,9 +1,10 @@
 from flask import Flask, render_template, request, redirect
-import helpers
 import message
+import helpers
 import os
 
 app = Flask(__name__)
+# os.environ['GOOGLE_APPLICATION_CREDENTIALS']='./static/jsonkey.json'
 
 @app.route('/')
 def index():
@@ -47,4 +48,4 @@ def leaderboard():
 
 if __name__ == '__main__':
     #./ngrok http 3000
-    app.run(port=3000) #debug = True in order to not run every time
+    app.run(port=3000) #debug = True //in order to not run every time
