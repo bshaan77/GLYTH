@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
 
   </style>
@@ -122,12 +123,12 @@
       </div>
     </section>
 
-<!-- ======= Testimonials Section ======= -->
+<!-- ======= Headlines Section ======= -->
 <section class="section border-top border-bottom" id="team">
   <div class="container">
     <div class="row justify-content-center text-center mb-5">
       <div class="col-md-4">
-        <h2 class="section-heading">The Team</h2>
+        <h2 class="section-heading">Headlines About Deforestation</h2>
       </div>
     </div>
     <div class="row justify-content-center text-center">
@@ -136,88 +137,33 @@
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
-              <div class="review text-center">
-                </p>
-                
-                <h3>Ishaan Bansal</h3>
-                <blockquote>
-                  <p>Ishaan is a First-Year Student at UCSC studying Computer Science</p>
-
-                <p class="review-user">
-                  <img src="../static/assets/img/ishaan.jpeg" alt="Image" class="img-fluid rounded-circle mb-3">
-                  <span class="d-block">
-                    <span class="text-black">Developer
-                    <p><a data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500" href="https://www.linkedin.com/in/ishaan-bansal/" class="btn btn-primary">Linkedin</a></p>
-
-                  </span>
-                </p>
-                
-
+            <!-- Display article titles, URLs, and image URLs -->
+            {% for article in articles %}
+              <div class="swiper-slide">
+                <div class="review text-center">
+                  <h3><a href="{{ article['url'] }}" target="_blank">{{ article['title'] }}</a></h3>
+                  <blockquote>
+                    <p><a href="{{ article['url'] }}" target="_blank">{{ article['url'] }}</a></p>
+                  </blockquote>
+                  <p class="review-user">
+                    <img src="{{ article['urlToImage'] }}" alt="{{ article['title'] }}" class="img-fluid rounded-circle mb-3">
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review text-center">
-                </p>
-                
-                <h3>Vin Vadoothker</h3>
-                <blockquote>
-                  <p>Vin is a First-Year Student at UCSC studying Computer Engineering.</p>
+            {% endfor %}
 
-                <p class="review-user">
-                  <img src="../static/assets/img/vin.jpeg" alt="Image" class="img-fluid rounded-circle mb-3">
-                  <span class="d-block">
-                    <span class="text-black">Developer
-                    <p><a data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500" href="https://www.linkedin.com/in/vinayakvadoothker/" class="btn btn-primary">Linkedin</a></p>
 
-                  </span>
-                </p>
-                
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
 
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review text-center">
-                </p>
-                
-                <h3>Sasank Gamini</h3>
-                <blockquote>
-                  <p>Sasank is a First-Year Student at UCSC studying Computer Science</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-                <p class="review-user">
-                  <img src="../static/assets/img/sasank.jpeg" alt="Image" class="img-fluid rounded-circle mb-3">
-                  <span class="d-block">
-                    <span class="text-black">Developer
-                    <p><a data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500" href="https://www.linkedin.com/in/sasankgamini" class="btn btn-primary">Linkedin</a></p>
 
-                  </span>
-                </p>
-                
 
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review text-center">
-                </p>
-                
-                <h3>Ashwin Marichetty</h3>
-                <blockquote>
-                  <p>Ashwin is a First-Year Student at UCSC studying Computer Science</p>
-
-                <p class="review-user">
-                  <img src="../static/assets/img/ashwin.jpeg" alt="Image" class="img-fluid rounded-circle mb-3">
-                  <span class="d-block">
-                    <span class="text-black">Developer
-                    <p><a data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500" href="https://www.linkedin.com/in/ashwin-marichetty/" class="btn btn-primary">Linkedin</a></p>
-
-                  </span>
-                </p>
-                
-
-              </div>
-            </div>  
-          </section>
-            <!-- End testimonial item -->
 
 
     <!---Simulation Gameplay-->

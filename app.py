@@ -2,9 +2,22 @@ from flask import Flask, render_template, request, redirect
 import message
 import helpers
 import os
+from newsscraper import get_articles
+
+
+
 
 app = Flask(__name__)
 # os.environ['GOOGLE_APPLICATION_CREDENTIALS']='./static/jsonkey.json'
+
+
+@app.route('/contact')
+def result():
+    # Call get_articles function to get the articles
+    articles = get_articles(num_images=4)
+
+    # Pass articles to render_template function
+    return render_template('contact.html', articles=articles)
 
 @app.route('/')
 def index():
@@ -36,10 +49,14 @@ def features():
             message.send_message(phone_number, coords)
         return redirect('/contact')
 
-        
-@app.route('/contact') #by default is GET request
+
+@app.route('/contact')
 def result():
-    return render_template('contact.html')
+    # Call get_articles function to get the articles
+    articles = get_articles(num_images=4)
+
+    # Pass articles to render_template function
+    return render_template('contact.html', articles=articles)
 
 @app.route('/pricing') #by default is GET request
 def leaderboard():
