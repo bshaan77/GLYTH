@@ -7,7 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1vRywrn0hytSQyj0nEKiwBi9aZv63c3TW
 """
 
-!pip install requests
 
 import requests
 from PIL import Image
