@@ -64,6 +64,7 @@ def get_articles(num_images=4):
                 
     return result
 
+
 results = []
 for article in article:
     title = article.find('h2', class_='css-1cmu9py esl82me2').text
@@ -76,3 +77,6 @@ for article in article:
     }
     results.append(result)
 
+print(title)
+print(url)
+print(image_url)
