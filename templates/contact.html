@@ -123,6 +123,7 @@
       </div>
     </section>
 
+
 <!-- ======= Headlines Section ======= -->
 <section class="section border-top border-bottom" id="team">
   <div class="container">
@@ -137,30 +138,67 @@
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
 
-            <!-- Display article titles, URLs, and image URLs -->
-            {% for article in articles %}
-              <div class="swiper-slide">
-                <div class="review text-center">
-                  <h3><a href="{{ article['url'] }}" target="_blank">{{ article['title'] }}</a></h3>
-                  <blockquote>
-                    <p><a href="{{ article['url'] }}" target="_blank">{{ article['url'] }}</a></p>
-                  </blockquote>
-                  <p class="review-user">
-                    <img src="{{ article['urlToImage'] }}" alt="{{ article['title'] }}" class="img-fluid rounded-circle mb-3">
-                  </p>
-                </div>
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="review text-center">
+                <h3><a href="{{ url1 }}" target="_blank">{{ title1 }}</a></h3>
+                <blockquote>
+                  <p><a href="{{ url1 }}" target="_blank">{{ url1 }}</a></p>
+                </blockquote>
+                <p class="review-user">
+                  <img src="{{ image_url1 }}" alt="{{ title1 }}" class="img-fluid rounded-circle mb-3">
+                </p>
               </div>
-            {% endfor %}
+            </div>
 
 
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="review text-center">
+                <h3><a href="{{ url2 }}" target="_blank">{{ title2 }}</a></h3>
+                <blockquote>
+                  <p><a href="{{ url2 }}" target="_blank">{{ url2 }}</a></p>
+                </blockquote>
+                <p class="review-user">
+                  <img src="{{ image_url2 }}" alt="{{ title2 }}" class="img-fluid rounded-circle mb-3">
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="review text-center">
+                <h3><a href="{{ url3 }}" target="_blank">{{ title3 }}</a></h3>
+                <blockquote>
+                  <p><a href="{{ url3 }}" target="_blank">{{ url3 }}</a></p>
+                </blockquote>
+                <p class="review-user">
+                  <img src="{{ image_url3 }}" alt="{{ title3 }}" class="img-fluid rounded-circle mb-3">
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="review text-center">
+                <h3><a href="{{ url4 }}" target="_blank">{{ title4 }}</a></h3>
+                <blockquote>
+                  <p><a href="{{ url4 }}" target="_blank">{{ url4 }}</a></p>
+                </blockquote>
+                <p class="review-user">
+                  <img src="{{ image_url4 }}" alt="{{ title4 }}" class="img-fluid rounded-circle mb-3">
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
-
       </div>
     </div>
   </div>
 </section>
+
+
+
 
 
 
