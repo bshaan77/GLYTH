@@ -7,8 +7,11 @@ import numpy as np
 import cv2
 #import earth engine api and authenticate/initizlize
 import ee
-ee.Authenticate()
-ee.Initialize()
+from google.oauth2.service_account import Credentials 
+from google.oauth2 import service_account
+# ee.Authenticate()
+credentials = Credentials.from_service_account_file('./static/jsonkey.json', scopes=['https://www.googleapis.com/auth/cloud-platform'])
+ee.Initialize(credentials=credentials)
 
 # Define a method for displaying Earth Engine image tiles to folium map.
 def add_ee_layer(self, ee_image_object, vis_params, name):

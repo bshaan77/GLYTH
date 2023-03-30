@@ -1,3 +1,5 @@
+## 1st Place - CruzHacks
+
 ## Inspiration
 Our inspiration for tackling the issue of deforestation stems from a deep concern for the environment and a desire to make a positive impact. We saw a need for a tool that could bring the impact of deforestation to life, and make it tangible for people everywhere. The problem of deforestation is a global issue and affects everyone, and we believe that it is important for people to understand its consequences and take action to address it. That's why we decided to build a data visualization tool that would allow users to see the impact of deforestation in their own communities. This was designed to be an immersive and educational experience, one that would inspire people to understand the issue. We believe that this project has the potential to make a real difference in the fight against deforestation. By raising awareness and inspiring people to take action, we hope to contribute to a more sustainable future for our planet.
 
@@ -40,5 +42,16 @@ We are proud that we were able to execute our project idea and build out a viabl
 5. Google Earth Engine
 
 ## What's next for GLYTH
-We plan on cleaning up the current components of our project and adding some more functionality. To better utilize Lightship VPS we plan to add our own locations for testing. We tried experimenting with creating our own, but given the timeframe of the hackathon, it made sense to leave this for future improvements. We also plan to create a more dynamic front end that can better integrate with other components of our project: more form data, using users' location, getting feedback from the user, improving the leaderboard, etc.
+We plan on cleaning up the current components of our project and adding some more functionality. To better utilize Lightship VPS we plan to add our own locations for testing. We tried experimenting with creating our own, but given the timeframe of the hackathon, it made sense to leave this for future improvements. We also plan to create a more dynamic front end that can better integrate with other components of our project: more form data, using users' location, getting feedback from the user, improving the leaderboard, etc.!
+
+CruzHacks Demo Picture:
+[CruzHacks_Demo_1](https://user-images.githubusercontent.com/74890320/216852151-26167504-8608-4b31-a10c-7f0829228642.jpg)
+
+
+https://user-images.githubusercontent.com/74890320/216852152-07bada0e-1bb4-467e-a0d8-152a6253405c.mov
+
+
+
+https://user-images.githubusercontent.com/74890320/216852153-de046bfa-3f8b-4337-ba03-1bb2a67ab4f6.mov
+
 
