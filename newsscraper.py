@@ -64,6 +64,7 @@ def get_articles(num_images=4):
                 
     return result
 
+<<<<<<< HEAD
 
 results = []
 for article in article:
@@ -80,3 +81,17 @@ for article in article:
 print(title)
 print(url)
 print(image_url)
+=======
+results = []
+for article in article:
+    title = article.find('h2', class_='css-1cmu9py esl82me2').text
+    url = article.find('a', class_='css-1echdzn e1n8kpyg0').get('href')
+    image_url = article.find('img', class_='css-1m7lee0 e1n8kpyg1')['src']
+    result = {
+        'title': title,
+        'url': url,
+        'image_url': image_url
+    }
+    results.append(result)
+
+>>>>>>> parent of f2dd878 (Update newsscraper.py)
