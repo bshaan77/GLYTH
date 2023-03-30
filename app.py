@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, redirect
 import message
 import helpers
 import os
-from newsscraper import get_articles
 
 
 
@@ -11,14 +10,6 @@ from newsscraper import get_articles
 app = Flask(__name__)
 # os.environ['GOOGLE_APPLICATION_CREDENTIALS']='./static/jsonkey.json'
 
-
-@app.route('/contact')
-def result():
-    # Call get_articles function to get the articles
-    articles = get_articles(num_images=4)
-
-    # Pass articles to render_template function
-    return render_template('contact.html', articles=articles)
 
 @app.route('/')
 def index():
@@ -53,25 +44,7 @@ def features():
 
 @app.route('/contact')
 def contact():
-    # Get the articles
-    result = get_articles(num_images=4)
-
-    # Extract the information we need
-    titles, urls, image_urls = [], [], []
-    for article in result:
-        titles.append(article['title'])
-        urls.append(article['url'])
-        image_urls.append(article['image_url'])
-
-    # Create 12 variables
-    title1, title2, title3, title4 = titles
-    url1, url2, url3, url4 = urls
-    image_url1, image_url2, image_url3, image_url4 = image_urls
-    print(title1, url1, image_url1)
-
-    return render_template('contact.html', title1=title1, title2=title2, title3=title3, title4=title4,
-                                          url1=url1, url2=url2, url3=url3, url4=url4,
-                                          image_url1=image_url1, image_url2=image_url2, image_url3=image_url3, image_url4=image_url4)
+    return render_template('contact.html')
 
 
 
