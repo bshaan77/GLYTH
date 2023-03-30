@@ -38,7 +38,6 @@ def getBeforeAndAfterImages(coordinates):
         'max':3.0,
         'palette': ['006400', 'FEFF99', '0000FF']
     }
-
     # Add EE drawing method to folium.
     folium.Map.add_ee_layer = add_ee_layer
     #Create a folium map object
@@ -58,6 +57,8 @@ def getBeforeAndAfterImages(coordinates):
     time.sleep(3)
     driver.save_screenshot("static/outputBefore.png")
     driver.quit()
+
+
 
 
 
@@ -93,6 +94,8 @@ def getBeforeAndAfterImages(coordinates):
     driver1.save_screenshot("static/outputAfter.png")
     driver1.quit()
 
+
+
     #Getting Before Image
     imageBefore = cv2.imread('static/outputBefore.png')
     imageBefore = cv2.resize(imageBefore, (600,480))
@@ -105,6 +108,8 @@ def getBeforeAndAfterImages(coordinates):
     mask = cv2.inRange(hsvimage, lowgreen, highgreen)
     #took original image and multiplied it with the black/white image(mask image) and black pixels ended up being the same since it has a value of zero
     finalImageBefore = cv2.bitwise_and(imageBefore,imageBefore,mask=mask)
+
+
 
     #Getting After Image
     imageAfter = cv2.imread('static/outputAfter.png')

@@ -3,6 +3,7 @@ import message
 import helpers
 import os
 
+#creating an object of Flassk class to create the app
 app = Flask(__name__)
 # os.environ['GOOGLE_APPLICATION_CREDENTIALS']='./static/jsonkey.json'
 
